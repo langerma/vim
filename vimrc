@@ -1,6 +1,9 @@
 execute pathogen#infect()
 " execute pathogen#helptags()
 
+" use mac pastebin
+set clipboard=unnamed
+
 set nocompatible
 set term=xterm-256color
 set title
@@ -13,6 +16,7 @@ set autoindent
 set smarttab
 " Enable mouse support
 set mouse=a
+
 
 set hlsearch
 
@@ -34,7 +38,7 @@ let g:airline_powerline_fonts = 1
 " let g:NERDTreeDirArrows = 0
 let g:tagbar_width = 30
 let g:tagbar_sort = 0
-let g:tagbar_left = 1
+let g:tagbar_left = 0
 let g:tagbar_autoshowtag = 1
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
