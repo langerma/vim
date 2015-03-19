@@ -47,7 +47,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let NERDTreeMapOpenInTab='<ENTER>'
 " let g:tagbar_usearrows = 1
 " autocmd VimEnter * nested NERDTreeOpen
-
+let g:pymode_folding = 1
 " highlight ExtraWhitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
