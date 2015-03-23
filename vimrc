@@ -38,7 +38,7 @@ let g:airline_powerline_fonts = 1
 " let g:NERDTreeDirArrows = 0
 let g:tagbar_width = 30
 let g:tagbar_sort = 0
-let g:tagbar_left = 0
+let g:tagbar_left = 1
 let g:tagbar_autoshowtag = 1
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -47,7 +47,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let NERDTreeMapOpenInTab='<ENTER>'
 " let g:tagbar_usearrows = 1
 " autocmd VimEnter * nested NERDTreeOpen
-let g:pymode_folding = 1
+" let g:pymode_folding = 1
 " highlight ExtraWhitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -66,14 +66,19 @@ let g:tagbar_type_puppet = {
       \]
     \}
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
+" syntastic_error_symbols
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_style_error_symbol = "S✗"
+let g:syntastic_style_warning_symbol = "S⚠"
 
 let g:tmuxline_preset = {
       \'a'    : '#S',
