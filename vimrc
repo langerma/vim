@@ -44,7 +44,7 @@ let g:tagbar_autoshowtag = 1
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
-let NERDTreeMapOpenInTab='<ENTER>'
+"let NERDTreeMapOpenInTab='<ENTER>'
 " let g:tagbar_usearrows = 1
 " autocmd VimEnter * nested NERDTreeOpen
 " let g:pymode_folding = 1
