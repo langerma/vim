@@ -55,3 +55,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "bundle/Tabular"]
+	path = bundle/Tabular
+	url = https://github.com/vim-scripts/Tabular.git
