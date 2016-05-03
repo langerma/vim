@@ -52,3 +52,6 @@
 [submodule "bundle/vim-pbcopy"]
 	path = bundle/vim-pbcopy
 	url = https://github.com/ahw/vim-pbcopy.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
