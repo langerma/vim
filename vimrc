@@ -43,7 +43,7 @@ let g:airline_powerline_fonts = 1
 " let g:NERDTreeDirArrows = 0
 let g:tagbar_width = 30
 let g:tagbar_sort = 0
-let g:tagbar_left = 1
+let g:tagbar_left = 0
 let g:tagbar_autoshowtag = 1
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -61,15 +61,6 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-let g:tagbar_type_puppet = {
-    \ 'ctagstype': 'puppet',
-    \ 'kinds': [
-        \'c:class',
-        \'s:site',
-        \'n:node',
-        \'d:definition'
-      \]
-    \}
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -88,6 +79,18 @@ let g:syntastic_style_warning_symbol = "S⚠"
 " custom functions
 com! FormatJSON %!python -m json.tool
 
+" learn tagbar to create tags on certain puppet keywords
+let g:tagbar_type_puppet = {
+    \ 'ctagstype': 'puppet',
+    \ 'kinds': [
+        \'c:class',
+        \'s:site',
+        \'n:node',
+        \'d:definition'
+      \]
+    \}
+
+" tmux configuration
 let g:tmuxline_preset = {
       \'a'    : '#S',
       \'win'  : ['#I', '#W'],
