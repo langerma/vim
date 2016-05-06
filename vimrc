@@ -25,8 +25,13 @@ syntax on
 set number
 set background=dark
 
-let g:solarized_termcolors=256
-colorscheme solarized
+"let g:solarized_termcolors=256
+"colorscheme solarized
+
+"let g:zenburn_high_Contrast=1
+"let g:zenburn_transparent=1
+colors zenburn
+
 filetype plugin indent on
 
 "let g:miniBufExplBuffersNeeded = 1
@@ -66,9 +71,9 @@ let g:tagbar_type_puppet = {
       \]
     \}
 
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -79,6 +84,9 @@ let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_style_error_symbol = "S✗"
 let g:syntastic_style_warning_symbol = "S⚠"
+
+" custom functions
+com! FormatJSON %!python -m json.tool
 
 let g:tmuxline_preset = {
       \'a'    : '#S',
