@@ -79,6 +79,12 @@ let g:syntastic_style_warning_symbol = "S⚠"
 " custom functions
 com! FormatJSON %!python -m json.tool
 
+" Removes trailing spaces
+function FixWhiteSpace()
+    %s/\s*$//
+    ''
+:endfunction
+
 " learn tagbar to create tags on certain puppet keywords
 let g:tagbar_type_puppet = {
     \ 'ctagstype': 'puppet',
