@@ -66,6 +66,8 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" let g:syntastic_python_checker_args='--ignore=E501,E302,E261,E262,E701,E241,E126,E127,E128,W801'
+let g:syntastic_aggregate_errors = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -75,7 +77,6 @@ let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_style_error_symbol = "S✗"
 let g:syntastic_style_warning_symbol = "S⚠"
-
 " custom functions
 com! FormatJSON %!python -m json.tool
 
