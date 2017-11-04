@@ -98,9 +98,9 @@ let g:tagbar_type_puppet = {
     \}
 
 " tmux configuration
-let g:tmuxline_preset = {
-      \'a'    : '#S',
-      \'win'  : ['#I', '#W'],
-      \'cwin' : ['#I', '#W', '#F'],
-      \'y'    : ['%R', '%a', '%Y'],
-      \'z'    : '#H'}
+"let g:tmuxline_preset = {
+"      \'a'    : '#S',
+"      \'win'  : ['#I', '#W'],
+"      \'cwin' : ['#I', '#W', '#F'],
+"      \'y'    : ['#{cpu_icon} #{cpu_percentage}','%R', '%a', '%Y'],
+"      \'z'    : '#H'}
