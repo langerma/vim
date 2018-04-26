@@ -73,3 +73,9 @@
 [submodule "bundle/ansible-vim"]
 	path = bundle/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "bundle/gmail"]
+	path = bundle/gmail
+	url = https://github.com/unikuragit/gmail.vim
