@@ -27,7 +27,7 @@ set background=dark
 
 "let g:zenburn_high_Contrast=1
 "let g:zenburn_transparent=1
-colors zenburn
+colors solarized
 
 filetype plugin indent on
 
