@@ -77,6 +77,9 @@ let g:syntastic_style_warning_symbol = "S⚠"
 " custom functions
 com! FormatJSON %!python -m json.tool
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 " learn tagbar to create tags on certain puppet keywords
 let g:tagbar_type_puppet = {
     \ 'ctagstype': 'puppet',
