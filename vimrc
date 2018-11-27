@@ -9,8 +9,9 @@ set term=xterm-256color
 set title
 set encoding=utf-8
 set modeline modelines=5
-set ts=4
-set sw=4
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set autoindent
 set smarttab
