@@ -5,7 +5,7 @@ execute pathogen#infect()
 set clipboard=unnamed
 
 set nocompatible
-#set term=xterm-256color
+"set term=xterm-256color
 set title
 set encoding=utf-8
 set modeline modelines=5
