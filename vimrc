@@ -9,6 +9,7 @@ set term=xterm-256color
 set title
 set encoding=utf-8
 set modeline modelines=5
+set modelineexpr
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
