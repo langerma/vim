@@ -79,3 +79,6 @@
 [submodule "bundle/gmail"]
 	path = bundle/gmail
 	url = https://github.com/unikuragit/gmail.vim
+[submodule "bundle/vim-nomadproject"]
+	path = bundle/vim-nomadproject
+	url = https://github.com/hashivim/vim-nomadproject
