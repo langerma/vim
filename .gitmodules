@@ -82,3 +82,6 @@
 [submodule "bundle/vim-nomadproject"]
 	path = bundle/vim-nomadproject
 	url = https://github.com/hashivim/vim-nomadproject
+[submodule "bundle/vim-hcl"]
+	path = bundle/vim-hcl
+	url = https://github.com/jvirtanen/vim-hcl
