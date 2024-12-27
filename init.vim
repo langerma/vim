@@ -27,7 +27,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'tomasiser/vim-code-dark'
 Plug 'ryanoasis/vim-devicons'
-Plug 'lifepillar/vim-solarized8'
+Plug 'Tsuzat/NeoSolarized.nvim', { 'branch': 'master' }
 
 " Initialize plugin system
 call plug#end()
@@ -116,7 +116,7 @@ set cindent
 
 " get correct color settings --> tmux also must be set properly
 set t_Co=256
-autocmd vimenter * ++nested colorscheme solarized8
+autocmd vimenter * ++nested colorscheme NeoSolarized
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
